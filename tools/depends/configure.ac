@@ -334,6 +334,7 @@ case $host in
           platform_cxxflags+=" -fembed-bitcode"
           sdk_name=$target_platform$use_sdk
           platform_min_version="$target_platform-version-min=9.0"
+          use_platform="auto"
         else
           # setup which cpu to use
           if test "x$use_cpu" = "xauto"; then
